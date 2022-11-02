@@ -1,0 +1,91 @@
+:root {
+    --color-one: aliceblue;
+    --color-two: darkslateblue;
+}
+
+#main-header {
+    color: var(--color-one);
+    background-color: var(--color-two);
+    display: block;
+    font-family: var(--big-font);
+    font-size: 100px;
+    /*header fills up the full screen left to right*/
+    width: 100%
+}
+
+.header {
+    color: var(--color-one);
+    background-color: var(--color-two);
+    display: block;
+    padding-bottom: 10px;
+}
+
+#main-title {
+    padding: 20px;
+}
+
+#navbar {
+    background-color: var(--color-two);
+    padding-bottom: 20px;
+}
+
+#log-in-button,
+#log-out-button {
+    color: var(--color-one);
+    margin: 10px;
+}
+
+#home-button {
+    color: var(--color-one);
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+body {
+    background-color: var(--color-one);
+}
+
+#new-post-box {
+    text-align: center;
+    margin: 30px;
+}
+
+#new-post-input {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--color-one);
+    resize: none;
+    margin:10px;
+}
+
+#new-post-title-input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--color-one);
+    resize: none;
+    margin: 5px;
+}
+
+#post-button {
+    background-color: var(--color-two);
+    color: var(--color-one);
+    margin: 5px;
+}
+
+#post-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.post {
+    background-color: var(--color-one);
+    outline: 5px solid;
+    outline-color: var(--color-two);
+}
