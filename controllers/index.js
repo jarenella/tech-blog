@@ -1,12 +1,8 @@
 const router = require('express').Router();
+const apiRoutes = require('./api');
+const homeRoutes = require('./homeroutes')
 
-// main page
-router.get('/', async (req, res) => {
-  res.render('index.handlebars'); //rendering index.handlebars
-});
-
-// router.get('/dish/:num', async (req, res) => {
-//   res.render('dish.handlebars', dishes[req.params.num - 1]);
-// })
+router.use('/api', apiRoutes);
+router.use('/', homeRoutes);
 
 module.exports = router;
